@@ -1,0 +1,118 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*=============== VARIABLE CSS ===============*/
+:root {
+  --header-height: 5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --primary-color: hsl(250, 100%, 34%);
+  --secondary-color: hsl(249, 100%, 96%);
+  --bg-color: hsl(249, 100%, 98%);
+  --hard-color: hsl(249, 100%, 20%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  /*========== Font Weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*========== material-icons ==========*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  z-index: var(--z-fixed);
+}
+
+/*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  padding-inline: 312px;
+}
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+  color: var(--primary-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.3s;
+}
+.nav__logo:hover {
+  color: var(--hard-color);
+}
+.nav__toggle {
+  display: flex;
+  color: var(--primary-color);
+  font-weight: var(--font-semi-bold);
+  position: relative;
+  align-items: center;
+  gap: 5px;
+}
+.nav__toggle-menu, .nav__toggle-close {
+  color: var(--secondary-color);
+  display: flex;
+  cursor: pointer;
+  background: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav__toggle-menu:hover, .nav__toggle-close:hover {
+  background: var(--hard-color);
+}
+
+.nav__logo {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */
