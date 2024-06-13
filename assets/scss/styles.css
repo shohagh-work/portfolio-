@@ -1,19 +1,82 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*=============== VARIABLE CSS ===============*/
+:root {
+  --header-height: 5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --primary-color: hsl(250, 100%, 34%);
+  --secondary-color: hsl(249, 100%, 96%);
+  --bg-color: hsl(249, 100%, 98%);
+  --hard-color: hsl(249, 100%, 20%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  /*========== Font Weight ==========*/
+  --font-regular: 500;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*========== material-icons ==========*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 body {
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--body-font);
 }
 
 .flex-container {
   display: flex;
-  background-color: dodgerblue;
-  flex-direction: row;
+  padding: 11px 312px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEEBFF;
+}
+
+.nav-item a:not(.nav_mail) {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-color);
+}
+
+.group-1 a:first-child {
+  gap: 24px;
 }
 
 .flex-container > div {
-  background-color: white;
-  width: 80px;
-  color: black;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav_mail {
+  display: flex;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 360px;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
