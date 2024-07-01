@@ -65,8 +65,13 @@
 }
 
 .hero {
-  @extend .common;
-  height: 512px;
+  display: flex;
+  padding: 96px 0px 32px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  align-self: stretch;
 }
 .counter {
   @extend .common;
