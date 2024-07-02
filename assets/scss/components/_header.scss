@@ -64,19 +64,6 @@
   color: var(--primary-color);
 }
 
-.hero {
-  display: flex;
-  padding: 96px 0px 32px 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 120px;
-  align-self: stretch;
-}
-.counter {
-  @extend .common;
-  height: 150px;
-}
 .case-studies {
   @extend .common;
   height: 700px;
@@ -132,7 +119,7 @@
   gap: 26px;
   position: fixed;
   right: 16px;
-  top: 40%;
+  top: 38%;
   border: 1px solid #d4ccff;
   color: var(--primary-color);
   border-radius: 360px;
