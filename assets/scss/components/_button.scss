@@ -1,0 +1,31 @@
+.common_link {
+    display: flex;
+    height: 44px;
+    padding: var(--spacing-2, 8px) var(--spacing-2, 8px) var(--spacing-2, 8px) 16px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    background: var(--Demo-1-surface-surface-lite, #E5E0FF);
+    color: var(--Demo-1-text-text-primary, #1D00B2);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    .icon_link {
+        display: flex;
+        padding: 2px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 360px;
+        background: var(--Demo-1-surface-surface-base, #FFF);
+    }
+}
+
+.common_link:hover{
+    background: var(--primary-color);
+    color: var(--bg-color);
+    .icon_link {
+        color: var(--Demo-1-text-text-primary, #1D00B2);
+    }
+}

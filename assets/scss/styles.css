@@ -325,6 +325,103 @@ a {
   background: var(--Demo-1-border-border-secondary, #D4CCFF);
 }
 
+.case_studies {
+  display: flex;
+  padding: var(--spacing-14, 72px) var(--section-service-margin-x, 312px);
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  background: var(--Demo-1-surface-surface-hero, #F2F0FF);
+}
+
+.case_studies_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--section-service-spacing-y, 32px);
+  align-self: stretch;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.section_tile {
+  color: var(--Demo-1-text-text-hard, #106);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.section_description {
+  color: var(--Demo-1-text-text-primary, #1D00B2);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.project_container {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 18px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.project_card {
+  display: flex;
+  height: 300px;
+  min-width: 296px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: var(--component-card-service-card-service-spacing, 24px);
+  background: url(/assets/resources/img/project_card1.png) lightgray 50%/cover no-repeat, #9DC4FF;
+}
+
+.common_link {
+  display: flex;
+  height: 44px;
+  padding: var(--spacing-2, 8px) var(--spacing-2, 8px) var(--spacing-2, 8px) 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: var(--Demo-1-surface-surface-lite, #E5E0FF);
+  color: var(--Demo-1-text-text-primary, #1D00B2);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.common_link .icon_link {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 360px;
+  background: var(--Demo-1-surface-surface-base, #FFF);
+}
+
+.common_link:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+.common_link:hover .icon_link {
+  color: var(--Demo-1-text-text-primary, #1D00B2);
+}
+
 .content {
   display: flex;
   flex-direction: column;
